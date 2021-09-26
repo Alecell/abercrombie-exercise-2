@@ -1,0 +1,45 @@
+/* Basic Style */
+html body {
+  background: #ffffff;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+html body .container {
+  display: block;
+  width: 600px;
+  margin: 100px auto 0;
+}
+
+html body ul {
+  margin: 0px;
+  padding: 0;
+}
+
+html body li * {
+  float: left;
+}
+
+html body li, html body h3 {
+  clear :both;
+  list-style :none;
+}
+
+html body input, html body button {
+  outline: none;
+}
+
+html body button {
+  background: none;
+  border: 0px;
+  color: #888888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;;
+}
+
+html body button :hover {
+  color: #333;
+}

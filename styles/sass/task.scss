@@ -1,0 +1,57 @@
+  /* New Task */
+  html body input#new-task   {
+    float: left;
+    width: 318px;
+  }
+
+  html body p > button :hover {
+    color: #0FC57C;
+  }
+
+  /* Task list */
+  html body li {
+    overflow: hidden;
+    padding: 20px 0px;
+    border-bottom: 1px solid #eee;
+  }
+
+  html body li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+
+  html body li > label {
+    font-size:18px;
+    line-height: 40px;
+    width: 237px;
+    padding:0 0 0 11px;
+  }
+  
+  html body li >  input[type="text"] {
+    width: 226px;
+  }
+
+  html body li > .delete :hover {
+    color: #CF2323;
+  }
+
+  /* Completed */
+  html body #completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  /* Edit Task */
+  html body ul li input[type=text] {
+    display :none;
+  }
+
+  html body ul li.editMode input[type=text] {
+    display :block;
+  }
+
+  html body ul li.editMode label {
+    display :none;
+  }
+  
