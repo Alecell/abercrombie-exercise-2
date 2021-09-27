@@ -1,0 +1,77 @@
+#form {
+  position: relative;
+  top: 132px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+
+  .form-section {
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    #incomplete-tasks {
+      margin-bottom: 1.4rem;
+    }
+
+    #completed-tasks {
+      .label {
+        text-decoration: line-through;
+        color: #888;
+      }
+    }
+
+    .form-title {
+      width: 100%;
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-bottom: 1.1rem;
+      border-bottom: 2px solid currentColor;
+    }
+
+    .task-list {
+      width: 100%;
+    }
+
+    .input-wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 2rem 0;
+      max-width: 41.4rem;
+
+      .label, .input[type=text] {
+        display: flex;
+        align-items: center;
+        flex: 1 1 0;
+        font-size: 1.8rem;
+        height: 4rem;
+        width: 100%;
+      }
+    }
+
+    .task {
+      border-bottom: 1px solid #eee;
+
+      &.edit-mode {
+        .input[type=text] {
+          display: block;
+        }
+
+        .label {
+          display: none;
+        }
+      }
+
+      .input[type=text] {
+        display: none;
+      }
+
+      .input[type=checkbox] {
+        margin: 0 1.6rem 0 1rem;
+      }
+    }
+  }
+}
