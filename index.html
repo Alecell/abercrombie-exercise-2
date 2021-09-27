@@ -17,7 +17,7 @@
           </label>
           <div class="input-wrap">
             <input id="new-task" class="input" type="text" />
-            <button type="button">Add</button>
+            <button id="add-task" type="button">Add</button>
           </div>
         </div>
 
@@ -25,48 +25,21 @@
           <legend class="form-title">
             Todo
           </legend>
-          <ul id="incomplete-tasks" class="task-list">
-            <li class="task">
-              <div class="input-wrap">
-                <input class="input" type="checkbox" />
-                <label class="label">Pay Bills</label>
-                <input class="input" type="text" />
-                <button type="button" class="edit">Edit</button>
-                <button type="button" class="delete">Delete</button>
-              </div>
-            </li>
-            <li class="task edit-mode">
-              <div class="input-wrap">
-                <input class="input" type="checkbox" />
-                <label class="label">Go Shopping</label>
-                <input class="input" type="text" value="Go Shopping">
-                <button type="button" class="edit">Save</button>
-                <button type="button" class="delete">Delete</button>
-              </div>
-            </li>
-          </ul>
+          <ul id="incomplete-tasks" class="task-list"></ul>
         </fieldset>
 
         <fieldset class="form-section">
           <legend class="form-title">
             Completed
           </legend>
-          <ul id="completed-tasks" class="task-list">
-            <li class="task">
-              <div class="input-wrap">
-                <input class="input" type="checkbox" checked />
-                <label class="label">See the Doctor</label>
-                <input class="input" type="text" />
-                <button type="button" class="edit">Edit</button>
-                <button type="button" class="delete">Delete</button>
-              </li>
-            </div>
-          </ul>
+          <ul id="completed-tasks" class="task-list"></ul>
         </fieldset>
       </form>
 
     </div>
   </body>
 
-  <script src="js/app.js" type="module" defer></script>
+  <script src="js/helpers.js" defer></script>
+  <script src="js/task.js" defer></script>
+  <script src="js/todo-service.js" defer></script>
 </html>

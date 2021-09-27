@@ -82,11 +82,9 @@ button:hover {
 }
 
 .input {
-  padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 6px;
   color: #888;
-  box-sizing: border-box;
 }
 
 #form {
@@ -95,6 +93,7 @@ button:hover {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.5rem;
+  padding-bottom: 3.4rem;
 }
 #form .form-section {
   margin-bottom: 1.8rem;
@@ -128,12 +127,14 @@ button:hover {
   max-width: 41.4rem;
 }
 #form .form-section .input-wrap .label, #form .form-section .input-wrap .input[type=text] {
-  display: flex;
-  align-items: center;
   flex: 1 1 0;
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
   height: 4rem;
   width: 100%;
+  box-sizing: border-box;
 }
 #form .form-section .task {
   border-bottom: 1px solid #eee;
@@ -149,6 +150,12 @@ button:hover {
 }
 #form .form-section .task .input[type=checkbox] {
   margin: 0 1.6rem 0 1rem;
+}
+
+@media screen and (min-width: 23.4em) {
+  #form {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
