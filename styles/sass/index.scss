@@ -1,3 +1,10 @@
+//  Base
+@forward "./reset.scss";
 @forward "./base.scss";
-@forward "./heading.scss";
-@forward "./task.scss";
+
+//  Components
+@forward "./components/button.scss";
+@forward "./components/input.scss";
+
+//  Blocks
+@forward "./form.scss";
